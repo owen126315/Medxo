@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"fes_imu(tim3)\startup_stm32f030x6.o"
+"fes_imu(tim3)\main.o"
+"fes_imu(tim3)\stm32f0xx_it.o"
+"fes_imu(tim3)\stm32f0xx_hal_msp.o"
+"fes_imu(tim3)\stm32f0xx_hal_i2c.o"
+"fes_imu(tim3)\stm32f0xx_hal_i2c_ex.o"
+"fes_imu(tim3)\stm32f0xx_hal_tim.o"
+"fes_imu(tim3)\stm32f0xx_hal_tim_ex.o"
+"fes_imu(tim3)\stm32f0xx_hal_uart.o"
+"fes_imu(tim3)\stm32f0xx_hal_uart_ex.o"
+"fes_imu(tim3)\stm32f0xx_hal_rcc.o"
+"fes_imu(tim3)\stm32f0xx_hal_rcc_ex.o"
+"fes_imu(tim3)\stm32f0xx_hal.o"
+"fes_imu(tim3)\stm32f0xx_hal_gpio.o"
+"fes_imu(tim3)\stm32f0xx_hal_dma.o"
+"fes_imu(tim3)\stm32f0xx_hal_cortex.o"
+"fes_imu(tim3)\stm32f0xx_hal_pwr.o"
+"fes_imu(tim3)\stm32f0xx_hal_pwr_ex.o"
+"fes_imu(tim3)\stm32f0xx_hal_flash.o"
+"fes_imu(tim3)\stm32f0xx_hal_flash_ex.o"
+"fes_imu(tim3)\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "FES_IMU(TIM3)\FES_IMU(TIM3).sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FES_IMU(TIM3).map" -o FES_IMU(TIM3)\FES_IMU(TIM3).axf
